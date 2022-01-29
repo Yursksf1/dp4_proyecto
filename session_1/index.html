@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my firist page</title>
     <style>
-        body {
+        .fondo {
           background-color:aliceblue;
           /* font-size: 50%; */
           border: solid ;
+          padding: 30px;
         }
-        h1 {          
+        .titulo {          
             text-align: center;
             color:tomato;
         }
         h2 {
             text-align: center;
-            color:plum
+            color:plum;
         }
         p {
-            /* text-align: left; */
+            color:rebeccapurple;
+        }
+
+        .primer_texto {
+            color:slateblue;
         }
         ol {
             list-style:none;
@@ -28,9 +33,23 @@
             text-decoration: none;
             color: royalblue;
         }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            weight: 100px;
+
+        }
+
+        .subtitulo {
+            color:salmon;
+        }
+        #principal {
+            font-size: 200%;
+        }
     </style>
 </head>
-<body>
+<body class='fondo'>
 
     <ol>
         <li><a href="./index.html"> HOME</a> </li>
@@ -38,8 +57,8 @@
         <li><a href="./imagenes.html"> IMAGENES</a> </li>
     </ol>  
 
-    <h1>Clase 1 de Programacion Web  </h1>
-    <p> 
+    <h1 class="titulo">Clase 1 de Programacion Web  </h1>
+    <p class='primer_texto'> 
         en este articulo vamos a explicar lo que aprendi hoy
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, ratione! Obcaecati accusantium nesciunt veritatis repudiandae voluptatibus, harum nam soluta incidunt recusandae quia. Harum incidunt ad doloribus ut, voluptatum nihil laboriosam?
     </p>
@@ -59,16 +78,17 @@
 
     <h2>uso de hipervinculos    </h2>
     <p> para hacer referencias  podemos usar la etiqueta a href .... 
-    <h3> absoluta</h3>
+    <h3 id='principal' class='subtitulo'> absoluta</h3>
     <a href="https://www.w3schools.com/">ver mas ejemplos</a>
-    <h3> relativa</h3>
+    <h3 class='subtitulo'> relativa</h3>
     <a href="./table.html"> tabla</a>    
     
-    <h3>etiqueta  </h3>
+    <h3 class='subtitulo'>etiqueta  </h3>
     &lt;html&gt;
     &lt;/html&gt;
 
-  
+    <img src="https://www.w3schools.com/html/img_girl.jpg" alt="girl">
+
 
 </body>
 
