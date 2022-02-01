@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container_1 {
+            display: flex;
+            background-color: papayawhip;
+            justify-content: space-between;
+            height: 200px;
+        }
+        .item_1 {
+            width: 30px;
+            height: 30px;
+            background-color: purple;
+        }
+        .container_1 .item_1:nth-child(2n+1) {
+            background-color: cyan;
+        }
+
+
+        .container_2 {
+            display: flex;
+            background-color: papayawhip;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        .item_2 {
+            width: 30px;
+            height: 30px;
+            background-color: purple;
+        }
+        .container_2 .item_2:nth-child(2n+1) {
+            background-color: cyan;
+        }
+
+
+        .container_3 {
+            display: flex;
+            background-color: papayawhip;
+            justify-content: center;
+            /* align-items: center; */
+            flex-direction: column;
+            height: 200px;
+        }
+        .item_3 {
+            width: 30px;
+            height: 30px;
+            background-color: purple;
+        }
+        .container_3 .item_3:nth-child(2n+1) {
+            background-color: cyan;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container_1">
+    <div class="item_1"></div>
+    <div class="item_1"></div>
+    <div class="item_1"></div>
+    <div class="item_1"></div>
+    <div class="item_1"></div>
+</div>
+<br>
+<div class="container_2">
+    <div class="item_2"></div>
+    <div class="item_2"></div>
+    <div class="item_2"></div>
+    <div class="item_2"></div>
+    <div class="item_2"></div>
+</div>
+
+<br>
+<div class="container_3">
+    <div class="item_3"></div>
+    <div class="item_3"></div>
+    <div class="item_3"></div>
+    <div class="item_3"></div>
+    <div class="item_3"></div>
+</div>
+
+</body>
+</html>
