@@ -1,10 +1,21 @@
-
-function run() {
-    console.log('Estoy corriendo el metodo run')
+window.onload = function() {
+    document.getElementById("btn_run_1").addEventListener(
+        "click", run_1
+    )
+    document.getElementById("btn_run_2").addEventListener(
+        "click", run_2
+    )
+    document.getElementById("btn_run_3").addEventListener(
+        "click", run_3
+    )
+    document.getElementById("btn_run_4").addEventListener(
+        "click", run_4
+    )
 }
 
+
+
 function run_1() { 
-    console.log('estoy corriendo la funcion run_1')
     // aca esta la suma 
 
     let number_1 = document.getElementById("number_1").value;
@@ -15,7 +26,6 @@ function run_1() {
 }
 
 function run_2() { 
-    console.log('estoy corriendo la funcion run_1')
     // aca esta la suma 
 
     let number_1 = document.getElementById("number_1").value;
@@ -27,7 +37,6 @@ function run_2() {
 }
 
 function run_3() { 
-    console.log('estoy corriendo la funcion run_1')
     // aca esta la suma 
 
     let number_1 = document.getElementById("number_1").value;
@@ -39,7 +48,6 @@ function run_3() {
 }
 
 function run_4() { 
-    console.log('estoy corriendo la funcion run_1')
     // aca esta la suma 
 
     let number_1 = document.getElementById("number_1").value;
