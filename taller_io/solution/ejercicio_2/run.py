@@ -20,7 +20,22 @@ Precio final sin redondeo: 3.450
 
 import pandas as pd
 
+
+def redondeo(valor):
+    valor_final = valor
+    residuo = valor % 1000
+    if residuo <= 500:
+        valor_final = valor + (500 - residuo)
+    else:
+        valor_final = valor + (1000 - residuo)
+    return valor_final
+
 path = './bebidas.xlsx'
 df = pd.read_excel(path)
-print("show df")
+df['aumento 15%'] = df['valor'] * 0.15
+df['aumento con 15%'] = df['valor'] * 1.15
+df['redondeado'] = df['aumento con 15%'].apply(lambda valor: redondeo(valor))
+
 print(df)
+
+df.to_excel("./output.xlsx")
