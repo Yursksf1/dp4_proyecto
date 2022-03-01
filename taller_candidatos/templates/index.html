@@ -6,5 +6,12 @@
 </head>
 <body>
 <p> este es el index con mas contenido </p>
+
+  {% for message in lista %}
+    <a href="/candidato/{{message.get('id')}}">
+        {{ message.get("name") }}
+    </a><br>
+
+  {% endfor %}
 </body>
 </html>
