@@ -2,5 +2,28 @@
 
 {% block content %}
 <h3>url</h3>
-  <p>los modelos en django son el mapeo de la base de dato, es decir la informacion que vamos a guardar</p>
+  <p>en el archivo urls definimos las rutas de nuestra aplicacion</p>
+  <p>este archivo es la puerta de entrada al contenido de nuestra aplicacion</p>
+
+<h4>include</h4>
+<p>esta funcion nos permite incluir rutas de una aplicacion al proyecto</p>
+<code>
+  path('', include('myapp.urls')),
+</code>
+
+
+<h4>path</h4>
+<p>esta funcion nos permite definir la ruta, y a que vista queremos referenciar</p>
+<code>
+  path('install', views.install, name='install'),
+</code>
+
+<p> definir bien el <code>name</code> de la url o ruta nos va a ser de ayuda cuando usemos el reverse </p>
+  <code>
+    <li><a href="{% url 'index' %}">Home</a></li>
+  </code>
+
+  <a href="https://docs.djangoproject.com/en/4.0/topics/http/urls/#reverse-resolution-of-urls">Url reverse</a>
+  <a href="https://docs.djangoproject.com/en/4.0/topics/http/urls/#example">ejemplo urls</a>
+
 {% endblock %}
