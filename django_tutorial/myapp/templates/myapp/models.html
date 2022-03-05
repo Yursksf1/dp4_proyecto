@@ -1,35 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Django Information</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Django Information</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="../">Home</a></li>
-      <li><a href="/install">install</a></li>
-      <li class="active"><a href="/models">models</a></li>
-      <li><a href="#">urls</a></li>
-      <li><a href="#">views</a></li>
-      <li><a href="#">templates</a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container">
-  <h3>Modelos</h3>
-  <p>los modelos en django son el mapeo de la base de dato, es decir la informacion que vamos a guardar</p>
-</div>
- 
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Modelos</h3>
+<p>los modelos en django son el mapeo de la base de dato, es decir la informacion que vamos a guardar</p>
+{% endblock %}

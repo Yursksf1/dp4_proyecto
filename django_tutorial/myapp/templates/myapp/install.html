@@ -1,49 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Django Information</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+{% extends "base.html" %}
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Django Information</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="../">Home</a></li>
-      <li class="active"><a href="/install">install</a></li>
-      <li><a href="/models">models</a></li>
-      <li><a href="#">urls</a></li>
-      <li><a href="#">views</a></li>
-      <li><a href="#">templates</a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container">
-  <h3>Instalacion</h3>
-  <p>En esta seccion veremos como instalar django</p>
- 
-  <h4>Instalacion de django</h4>
-  <p>
-    pip install django
-  </p>
+{% block content %}
+<h3>Instalacion</h3>
+<p>En esta seccion veremos como instalar django</p>
 
-  <h4>crear un proyecto de django</h4>
-  <p>
-    django-admin startproject mysite
-  </p>
+<h4>Instalacion de django</h4>
+<p>
+  pip install django
+</p>
 
-  esto genera una serie de archvios del proyecto
-</div>
- 
+<h4>crear un proyecto de django</h4>
+<p>
+  django-admin startproject mysite
+</p>
 
-
-</body>
-</html>
+esto genera una serie de archvios del
+{% endblock %}
