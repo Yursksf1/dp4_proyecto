@@ -11,3 +11,6 @@ def index(request):
         "cantidad": len(videos),
         "videos": videos
     })
+
+def video_detail(request, id):
+    pass
