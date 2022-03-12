@@ -9,8 +9,13 @@
 <body>
     <h1>proyecto videos</h1>
 
+    {{ cantidad }}
+
+    {% for video in videos %}
     <ul>
-        <a href="http://some.com">Video Uno</a>
+        <a href="{{ video.link }}"> {{ video.title }}</a>
     </ul>
+    {% endfor %}
+
 </body>
-</html>l
+</html>

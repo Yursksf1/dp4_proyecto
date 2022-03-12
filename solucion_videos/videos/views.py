@@ -1,6 +1,13 @@
 from django.shortcuts import render, redirect
+from .models import Video
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'videos/index.html', {})
+    videos = Video.objects.all()
+    print('videos', videos)
+    print("cantidad de videos: ", len(videos))
+    return render(request, 'videos/index.html', {
+        "cantidad": len(videos),
+        "videos": videos
+    })
