@@ -1,3 +1,6 @@
 /venv
 django_tutorial/myvenv
 django_tutorial/db.sqlite3
+
+solucion_videos/venv
+solucion_videos/db.sqlite3
